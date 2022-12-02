@@ -33,7 +33,7 @@ registerRoute(({ request }) => ["style","script","worker"].includes(request.dest
     plugins:[
       new CacheableResponsePlugin({
         statuses:[0,200]
-      })
-    ]
+      }),
+    ],
   })
-)
+);
